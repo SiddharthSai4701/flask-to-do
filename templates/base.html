@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <!-- Jinja2 syntax. This is the template agent that Flask uses. This block is where we're going to insert our code on all the other pages that inherit this template -->
+    {% block head %}{% endblock%}
+    
+  </head>
+  <body>
+    {% block body %}{% endblock%}
+  </body>
+</html>
